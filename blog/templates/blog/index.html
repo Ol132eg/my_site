@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+
+
+        {% block content %}
+        {% for post in dict_posts %}
+        <div class="card">
+            <h2> {{ post.title }} </h2>
+            <h5>{{ post.description }}, {{ post.date }}</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>{{ post.content }}</p>
+        </div>
+        {% endfor %}
+        {% endblock %}
+
